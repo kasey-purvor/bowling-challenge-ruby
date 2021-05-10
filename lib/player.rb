@@ -1,10 +1,9 @@
 class Player
-  attr_reader :name, :score, :points, :bonus, :total, :frame_number
+  attr_reader :score, :points, :bonus, :total, :frame_number
 
-  def initialize(name:)
-    @name = name
+  def initialize
     @score = []
-    @bonus = 0 #strictly the additional points fro mstrikes/spares. Not pin points
+    @bonus = 0 #strictly the additional points fromstrikes/spares. Not pin points
     @points = 0 #strictly the number of pins knocked over. no bonuses
     @total = 0
     @frame_number = 0
